@@ -8,238 +8,206 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="amazon stylesheet.css">
-    <title>Amazon</title>
+    <title>Amazon.in</title>
 </head>
 
 <body>
 
     <header>
-        <!-- Header-->
+        <!-- NAVBAR -->
         <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo"> </div>
+
+            <div class="nav-logo">
+                <div class="logo-text">amazon<span>.</span>in</div>
             </div>
-            <div class="nav-addres border">
-                <p class="add-first">Deliever to</p>
+
+            <div class="nav-address">
+                <span class="add-first">Deliver to</span>
                 <div class="add-icon">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p class="add-second">India</p>
-
+                    <span>India</span>
                 </div>
             </div>
+
             <div class="nav-search">
                 <select class="search-select">
-                    <option> All </option>
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Clothing</option>
+                    <option>Books</option>
+                    <option>Mobiles</option>
                 </select>
-                <input placeholder="Search amazon" class="search-input">
+                <input type="text" placeholder="Search Amazon.in" class="search-input" />
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <!-- div is used for next line -->
 
-            <div class="border ">
-                <p class="nav-signin"> <span> Hello , Sign in </span> </p>
-
-                <p class="nav-second "> Account & Lists </p>
+            <div class="nav-item">
+                <span class="line1">Hello, Sign in</span>
+                <span class="line2">Account &amp; Lists ▾</span>
             </div>
 
-
-            <div class="nav-return border  ">
-                <p> <span> Returns </span> </p>
-                <p class="nav-second ">& orders </p>
+            <div class="nav-item">
+                <span class="line1">Returns</span>
+                <span class="line2">&amp; Orders</span>
             </div>
-            <div class="nav-cart  border ">
 
-                <i class="fa-solid fa-cart-shopping  ">cart</i>
-
+            <div class="nav-cart">
+                <div style="position:relative;">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <span class="cart-label">Cart</span>
             </div>
 
         </div>
-        <!--Pannel -->
+
+        <!-- PANEL -->
         <div class="panel">
-            <div class="panel-all">
-                <i class="fa-solid fa-bars"></i>All
-            </div>
-            <div class="panel-ops">
-                <p>Today's Deals </p>
-                <p>Coustmer service </p>
-                <p>Registry </p>
-                <p>Gift card's</p>
-                <p>Sell</p>
-
-            </div>
-            <div class="panel-deals">
-                Shop deals in electronics
-            </div>
-
+            <div class="panel-item all-menu"><i class="fa-solid fa-bars"></i> All</div>
+            <div class="panel-item">Today's Deals</div>
+            <div class="panel-item">Customer Service</div>
+            <div class="panel-item">Registry</div>
+            <div class="panel-item">Gift Cards</div>
+            <div class="panel-item">Sell</div>
+            <div class="panel-item">Mobiles</div>
+            <div class="panel-item">Fashion</div>
+            <div class="panel-item">Electronics</div>
+            <div class="panel-deals">Shop deals in Electronics →</div>
         </div>
-
-
     </header>
 
-    <!-- Hero section , center -->
+    <!-- HERO -->
     <div class="hero-section">
+        <div class="hero-gradient"></div>
         <div class="hero-message">
-            <p>
-                You are on amazon.com You can also shop on Amazon for millions of products with fast local delivery.
-            </p>
+            You are on <strong>Amazon.in</strong>. Shop millions of products with fast delivery across India.
+            <a href="#">Switch to your local store →</a>
         </div>
     </div>
 
-    <div class="shop-section">
-        <div class="box1 box">
-            <div class="box-content">
-                <h2 style="color: black;"> Health & Personal Care </h2>
-                <div class="box-img " style="background-image: url('box1_image.jpg');"></div>
-                <p> See more </p>
+    <!-- SHOP GRID -->
+    <main class="shop-section">
+
+        <div class="box">
+            <h2>Health &amp; Personal Care</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box2 box ">
-            <div class="box-content">
-                <h2 style="color: black;"> Clothes </h2>
-                <div class="box-img " style="background-image: url('box2_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Clothing &amp; Fashion</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box3 box ">
-            <div class="box-content">
-                <h2 style="color: black;"> Furniture </h2>
-                <div class="box-img " style="background-image: url('box3_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Furniture &amp; Home</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box4 box ">
-            <div class="box-content">
-                <h2 style="color: black;"> Mobile phones </h2>
-                <div class="box-img " style="background-image: url('box4_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Mobile Phones</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box5 box">
-            <div class="box-content">
-                <h2 style="color: black;"> Makeup</h2>
-                <div class="box-img " style="background-image: url('box5_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Makeup &amp; Beauty</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box6 box">
-            <div class="box-content">
-                <h2 style="color: black;"> Pets care </h2>
-                <div class="box-img " style="background-image: url('box6_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Pet Care</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box7 box">
-            <div class="box-content">
-                <h2 style="color: black;"> New arrival and toys</h2>
-                <div class="box-img " style="background-image: url('box7_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Toys &amp; New Arrivals</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
-
-        <div class="box8  box">
-            <div class="box-content">
-                <h2 style="color: black;"> Beauty products </h2>
-                <div class="box-img " style="background-image: url('box8_image.jpg');"></div>
-                <p> See more </p>
+        <div class="box">
+            <h2>Beauty Products</h2>
+            <div class="box-img"
+                style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80');">
             </div>
+            <span class="box-link">See more →</span>
         </div>
 
+    </main>
 
-    </div>
-    <footer>
-        
-        <!--Footer-->
-        <div class="foot-panel1"> Back to top </div>
+    <!-- FOOTER -->
+    <footer class="footer">
 
+        <div class="foot-panel1">↑ Back to top</div>
 
         <div class="foot-panel2">
-
-            <ul>
-                <p> Get to Know Us </p>
-
-                <a> About Amazon </a>
-                <a> Careers </a>
-                <a> Press Releases </a>
-                <a> Amazon Science </a>
-
-            </ul>
-
-            <ul>
-                <p> Connect with Us</h>
-                    <a> Facebook</a>
-                    <a> Twitter</a>
-                    <a> Instagram</a>
-
-
-
-            </ul>
-
-
-            <ul>
-                <p> Make money with us </p>
-
-
-                <a> Sell on Amazon</a>
-                <a> Sell under Amazon Accelerator</a>
-                <a> Protect and Build Your Brand</a>
-                <a> Amazon Global Selling</a>
-                <a> Supply to Amazon</a>
-                <a> Become an Affiliate</a>
-                <a> Fulfilment by Amazon</a>
-                <a> Advertise Your Products</a>
-                <a> Amazon Pay on Merchants</a>
-
-            </ul>
-
-
-            <ul>
-
-                <p> Let Us Help You</p>
-                <a> Your Account</a>
-                <a>Returns Centre
-                    <a> Recalls and Product Safety Alerts</a>
-                    <a> 100% Purchase Protection</a>
-                    <a> Amazon App Download</a>
-                    <a>Help</a>
-
-
-            </ul>
-
+            <div class="foot-col">
+                <p>Get to Know Us</p>
+                <a href="#">About Amazon</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="foot-col">
+                <p>Connect with Us</p>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="foot-col">
+                <p>Make Money with Us</p>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Fulfilment by Amazon</a>
+                <a href="#">Advertise Your Products</a>
+            </div>
+            <div class="foot-col">
+                <p>Let Us Help You</p>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon App Download</a>
+                <a href="#">Help</a>
+            </div>
         </div>
 
-
         <div class="foot-panel3">
-
-            <div class="logo"></div>
-
+            <div class="logo-footer">amazon<span>.</span>in</div>
         </div>
 
         <div class="foot-panel4">
             <div class="foot-pages">
-
-                <a> Condition of use </a>
-                <a> Pivacy of use </a>
-                <a> Your ads pivacy choices </a>
-
-                <div class="copyright">© 1996-2025, Amazon.com, Inc. or its affiliates</div>
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Your Ads Privacy Choices</a>
             </div>
+            <div class="copyright">© 1996–2025, Amazon.com, Inc. or its affiliates. All rights reserved.</div>
         </div>
+
     </footer>
+
 </body>
 
 </html>
